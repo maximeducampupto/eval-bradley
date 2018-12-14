@@ -15,16 +15,27 @@ function carousel(buttonId)
     {
         i++;
         let nextImage = $('#carousel-image-' + i);
-        console.log(nextImage);
+        if (nextImage.length)
+        {
+            currentImage.addClass('carousel-hidden').removeClass('active');
+            // TODO animate
+            nextImage.addClass('active').removeClass('carousel-hidden');
+        }
 
 
 
-    } else if (buttonId === 'previous' && i > 0)
+    } else if (buttonId === 'previous' && i > 1)
     {
         i--;
+        let prevImage = $('#carousel-image-' + i);
+        if (prevImage.length)
+        {
+            currentImage.addClass('carousel-hidden').removeClass('active');
+            // TODO animate
+            prevImage.addClass('active').removeClass('carousel-hidden');
+        }
     }
 
-    currentImage.addClass('carousel-hidden').removeClass('active');
 
 }
 

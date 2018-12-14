@@ -99,15 +99,23 @@
 
 #slide i {
     color: white;
-    font-size: 2rem;
+    font-size: 3rem;
     opacity: .8;
+    z-index: 10;
 }
 
 #previous {
-    position: relative;
-    top: 50%;
+    position: absolute;
+    top: 40%;
     left: 10%;
-    transform: translate(-50%);
+    transform: translate(-50%, -50%);
+}
+
+#next {
+    position: absolute;
+    top: 40%;
+    right: 0;
+    transform: translate(-50%, -50%);
 }
 
 #previous, #next {
@@ -169,7 +177,7 @@
 }
 
 
-@media (min-width: 1024px) {
+@media (min-width: 1048px) {
     .wrapper {
         flex-direction: row;
         height: 100vh;
@@ -209,12 +217,11 @@
         object-fit: cover;
     }
 
-
-
     #slide i {
         color: white;
         font-size: 3rem;
         opacity: .8;
+        z-index: 10;
     }
 
     #previous {
