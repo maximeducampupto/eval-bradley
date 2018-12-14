@@ -163,15 +163,6 @@
     background: #f86925;
 }
 
-.nav-yellow {
-    color: #ff9e00 !important;
-    font-weight: bold;
-}
-
-.nav-blue {
-    color: #1e8bc4 !important;
-    font-weight: bold;
-}
 
 .active {
     position: relative;
@@ -294,6 +285,112 @@
 .experienceWrapper i {
     color: #1e8bc4 !important;
 }
+
+/* Education Page */
+.educationWrapper i {
+    color: #f15a49 !important;
+}
+
+#skills h1 {
+    color: #f15a49;
+}
+
+.skillContainer {
+    margin-bottom: 2rem;
+}
+
+.progress {
+    width: 100%;
+    height: 1rem;
+    border-radius: 10px;
+    background: rgba(255, 96, 78, 0.71);
+    margin-top: .5rem;
+}
+
+.progress-inner {
+    width: 80%;
+    height: inherit;
+    border-radius: 10px;
+    background: rgb(248, 93, 75);
+    position: relative;
+}
+
+.inner-60 {
+    width: 60%;
+}
+
+.inner-40 {
+    width: 40%;
+}
+
+/* Porfolio */
+.portfolioWrapper i {
+    color: #f86925 !important;
+}
+
+#portfolioContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sample {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    border: 1px solid #f86925;
+}
+
+.sample h1 {
+    color: #f86925 !important;
+    margin: 1rem 0 !important;
+}
+
+/* Blog Page */
+.post-sample {
+    border-bottom: 1px solid #35bc7a;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.post-sample h1 {
+    color: #35bc7a !important;
+}
+
+.post-sample img {
+    margin-bottom: 1rem;
+    width: fit-content;
+}
+
+.post-sample p {
+    margin: 1rem 0;
+}
+
+.blogWrapper i {
+    color: #35bc7a !important;
+}
+
+/* Contact Page */
+.contactWrapper i {
+    color: #1e8bc4 !important;
+}
+
+#contactContainer h1 {
+    color: #1e8bc4;
+    margin-bottom: 2rem;
+}
+
+.contactWrapper input {
+    border: 1px solid #1e8bc4;
+    height: 1rem;
+    padding-right: .5rem;
+    margin-bottom: .5rem;
+}
+
 /* Media queries */
 
 @media (min-width: 768px) {
@@ -382,6 +479,80 @@
     #previous:hover, #next:hover {
         color: #ff9e00;
     }
+
+    /* Indiv pages */
+    .main-header {
+        display: flex;
+        width: 100%;
+    }
+
+    #headerPresentation {
+        flex: 1 1 45%;
+    }
+
+    .main-header nav {
+        flex: 1 1 55%;
+    }
+
+    .main-header nav ul {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0 5%;
+    }
+
+    .profileMain, #skills {
+        width: 75%;
+        margin: 5rem auto;
+    }
+
+    #portfolioContainer, #blogPostsContainer{
+        width: 75%;
+        margin: 5rem auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .experienceMain {
+        width: 75%;
+        margin: 5rem auto;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        margin: 3rem auto;
+    }
+    
+    #contactContainer {
+        text-align: center;
+    }
 }
 
+.main-header .nav-yellow {
+    color: #ff9e00;
+    font-weight: bold;
+}
 
+.main-header .nav-blue {
+    color: #1e8bc4;
+    font-weight: bold;
+}
+
+.main-header .nav-red {
+    color: #f15a49;
+    font-weight: bold;
+}
+
+.main-header .nav-orange {
+    color: #f86925;
+    font-weight: bold;
+}
+
+.main-header .nav-green {
+    color: #35bc7a;
+    font-weight: bold;
+}
