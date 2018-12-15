@@ -17,8 +17,9 @@ function carousel(buttonId)
         let nextImage = $('#carousel-image-' + i);
         if (nextImage.length)
         {
-            currentImage.addClass('carousel-hidden').removeClass('active');
-            // TODO animate
+            currentImage.removeClass('active').addClass('carousel-hidden');
+            currentImage.css('animation', 'currentImageToLeft .3s forwards');
+            nextImage.css('animation', 'nextImageToLeft .6s forwards');
             nextImage.addClass('active').removeClass('carousel-hidden');
         }
 
@@ -30,8 +31,10 @@ function carousel(buttonId)
         let prevImage = $('#carousel-image-' + i);
         if (prevImage.length)
         {
-            currentImage.addClass('carousel-hidden').removeClass('active');
-            // TODO animate
+
+            currentImage.removeClass('active').addClass('carousel-hidden');
+            currentImage.css('animation', 'currentImageToRight .3s forwards');
+            prevImage.css('animation', 'nextImageToRight .6s forwards');
             prevImage.addClass('active').removeClass('carousel-hidden');
         }
     }

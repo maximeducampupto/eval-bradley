@@ -154,8 +154,9 @@
 
 .carousel-hidden {
     display: none;
+    position: relative;
+    left: 100%;
 }
-
 
 
 
